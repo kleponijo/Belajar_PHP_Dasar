@@ -7,9 +7,8 @@ a:
 echo "Hello A" . PHP_EOL;
 
 $counter = 1;
-
 while (true) {
-  echo "Ini Adalah for while ke-$counter" . PHP_EOL;
+  echo "Perulangan ke-$counter" . PHP_EOL;
   $counter++;
 
   if ($counter > 10) {
