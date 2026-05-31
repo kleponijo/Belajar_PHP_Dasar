@@ -10,20 +10,20 @@ function bar()
   echo "Bar" . PHP_EOL;
 }
 
+$functionYangAkanDipanggil = "foo";
+$functionYangAkanDipanggil();
 
-$functionYangAkanDiPanggil = "foo";
-$functionYangAkanDiPanggil();
+$functionYangAkanDipanggil = "bar";
+$functionYangAkanDipanggil();
 
-$functionYangAkanDiPanggil = "bar";
-$functionYangAkanDiPanggil();
-
-function sayHello(string $name, $filter)
+function sayHello(String $name, $filter)
 {
   $finalName = $filter($name);
+
   echo "Hello $finalName" . PHP_EOL;
 }
 
-function sampleFunction(string $name): string
+function sampleFunction(String $name): String
 {
   return "Sample $name";
 }

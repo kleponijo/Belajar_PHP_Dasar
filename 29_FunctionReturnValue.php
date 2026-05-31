@@ -6,13 +6,10 @@ function sum(int $first, int $second): int
   return $total;
 }
 
-$result = sum(10, 10);
+$result = sum(100, 100);
 var_dump($result);
 
-$result = sum(20, 20);
-var_dump($result);
-
-function getFinalValue(int $value): string
+function getFinalValue(int $value): String
 {
   if ($value >= 80) {
     return "A";
@@ -25,10 +22,12 @@ function getFinalValue(int $value): string
   } else {
     return "E";
   }
+
+  echo "Ups" . PHP_EOL;
 }
 
 $score = getFinalValue(90);
 var_dump($score);
 
-$score = getFinalValue(40);
+$score = getFinalValue(30);
 var_dump($score);

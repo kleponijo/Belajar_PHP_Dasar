@@ -10,7 +10,7 @@ $sayHello("Budi");
 function sayGoodBye(String $name, $filter)
 {
   $finalName = $filter($name);
-  echo "Hello $finalName" . PHP_EOL;
+  echo "Goodbye $finalName" . PHP_EOL;
 }
 
 sayGoodBye("Nadif", function ($name): String {
@@ -23,16 +23,15 @@ $filterFunction = function ($name): String {
 
 sayGoodBye("Nadif", $filterFunction);
 
-
 $firstName = "Nadif";
 $lastName = "Zidan";
 
-$fullName = function () use ($firstName, $lastName) {
+$sayHelloNadif = function () use ($firstName, $lastName) {
   echo "Hello $firstName $lastName" . PHP_EOL;
 };
-
-$fullName();
+$sayHelloNadif();
 
 $firstName = "Budi";
-$lastName = "Nugraha";
-$fullName();
+$lastName = "Setiawan";
+
+$sayHelloNadif();
