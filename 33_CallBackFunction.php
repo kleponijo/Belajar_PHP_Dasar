@@ -12,4 +12,4 @@ sayHello("Nadif", function (String $name): String {
   return strtoupper($name);
 });
 
-sayHello("Nadif", fn($name) => strtoupper($name));
+sayHello("Nadif", fn(String $name) => strtoupper($name));

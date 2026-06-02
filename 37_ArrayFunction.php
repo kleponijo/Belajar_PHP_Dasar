@@ -8,14 +8,15 @@ var_dump($dataResult);
 rsort($data);
 var_dump($data);
 
+sort($data);
+var_dump($data);
+
 var_dump(array_keys($data));
 var_dump(array_values($data));
 
 $person = [
-
   "first_name" => "Nadif",
   "last_name" => "Zidan"
-
 ];
 
 var_dump(array_keys($person));

@@ -2,8 +2,8 @@
 
 function createName()
 {
-  $name = "Nadif"; // Local Scope
+  $name = "Nadif"; // local scope
 }
 
 createName();
-echo $name . PHP_EOL; // error
+echo $name; //error

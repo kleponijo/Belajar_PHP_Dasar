@@ -1,12 +1,14 @@
 <?php
 
-$name = "Nadif"; // Global Scope
+$name = "Nadif"; // global scope
 
 function sayHello()
 {
-  global $name; // Global Keyword
+  // echo $name . PHP_EOL; // error
+  global $name;
   echo $name . PHP_EOL;
-  echo $GLOBALS['name'] . PHP_EOL;
+
+  echo $GLOBALS["name"] . PHP_EOL;
 }
 
 sayHello();

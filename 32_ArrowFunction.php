@@ -1,6 +1,13 @@
 <?php
+
 $firstName = "Nadif";
 $lastName = "Zidan";
 
-$anonymousFunction = fn() => "Hello $firstName $lastName" . PHP_EOL;
+$anonymousFunction = function () use ($firstName, $lastName): String {
+  return "Hello $firstName $lastName" . PHP_EOL;
+};
+
+$arrowFunction = fn() => "Hello $firstName $lastName" . PHP_EOL;
+
 echo $anonymousFunction();
+echo $arrowFunction();
